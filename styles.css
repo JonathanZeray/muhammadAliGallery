@@ -171,6 +171,10 @@
     margin-top: 0;
 }
 
+.about-link:hover {
+    text-decoration: underline;
+}
+
 .char {
     transform: translateY(115px);
     transition: transform .5s;
