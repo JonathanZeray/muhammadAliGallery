@@ -56,7 +56,7 @@
     height: 14%;
     width: 20%;
     left: 5%;
-    top: 0%;
+    top: 5%;
   }
   
   .tile:nth-child(2) {
@@ -133,16 +133,19 @@
  }
 
  a {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     text-decoration: none;
     color: black;
+    margin-right: 15px;
  }
 
 .container {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 15px;
+    /* display: flex;
+    justify-content: flex-end; */
+    /* added these lines to remove navbar "box" and having the nav links move over images instead of under.*/
+    position: absolute;
+    z-index: 2;
 }
 
 .border-container {
