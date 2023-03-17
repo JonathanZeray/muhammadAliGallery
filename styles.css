@@ -182,3 +182,13 @@
     transform: translateY(115px);
     transition: transform .5s;
 }
+
+@media only screen and (max-width: 600px) {
+  .about-header-text {
+    font-size: 36px;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+}
