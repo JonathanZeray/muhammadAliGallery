@@ -30,6 +30,11 @@
     border-radius: 1vmax;
     position: absolute;
     transition: transform 800ms ease;
+    display: none;
+  }
+
+  .galleryImage {
+    opacity: 1 !important;
   }
   
   .tile:hover {
@@ -88,7 +93,7 @@
     height: 16%;
     width: 32%;
     left: 8%;
-    top: 70%;
+    top: 68%;
   }
   
   .tile:nth-child(6) {
@@ -104,7 +109,7 @@
     height: 16%;
     width: 20%;
     left: 50%;
-    top: 74%;
+    top: 69%;
   }
   
   .tile:nth-child(8) {

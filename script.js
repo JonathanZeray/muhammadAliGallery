@@ -1,5 +1,35 @@
 window.onload = function () {
 
+// Logic for loading in images when coming to home page.
+
+  function addAllBlocks() {
+    let els = document.querySelectorAll(".tile");
+    els.forEach((el) => {
+      el.style.display = "block";
+    });
+
+    els.style.transform = "1s"
+  }
+
+  setTimeout(() => {
+    addAllBlocks();
+  }, 1000);
+
+// Logic for replacing images with color blocks.
+
+  function addColorBlock() {
+    let elements = document.querySelectorAll(".galleryImage");
+    elements.forEach((element) => {
+      element.classList.remove('galleryImage');
+    });
+}
+
+setTimeout(() => {
+  addColorBlock();
+}, 1600);
+
+// Logic for mouse events
+
 const gallery = document.getElementById("gallery");
 window.onmousemove = e => {
   const mouseX = e.clientX,
@@ -11,18 +41,20 @@ window.onmousemove = e => {
   const maxX = gallery.offsetWidth - window.innerWidth,
         maxY = gallery.offsetHeight - window.innerHeight;
   
-  const panX = maxX * xDecimal * -1,
-        panY = maxY * yDecimal * -1;
+  const panX = maxX * xDecimal * -0.89,
+        panY = maxY * yDecimal * -0.89;
  
   gallery.animate({
     transform: `translate(${panX}px, ${panY}px)`
   }, {
-    duration: 4000,
+    duration: 8000,
     fill: "forwards",
     easing: "ease"
   })
 }
 
+
+// Logic for About page header.
 
 const myText = new SplitType("#header-text");
 
